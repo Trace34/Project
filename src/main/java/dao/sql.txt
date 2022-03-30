@@ -1,0 +1,14 @@
+create table "events"
+(
+    "id"          serial      NOT NULL PRIMARY KEY,
+    "type"        varchar(30) NOT NULL,
+    "date"        date        NOT NULL,
+    "time"        time        NOT NULL,
+    "description" text        NOT NULL,
+    "first_name"  varchar(50),
+    "last_name"   varchar(50),
+    "age"         integer,
+    "gift"        text
+);
+
+drop table if exists "events";
